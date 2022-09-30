@@ -1,0 +1,17 @@
+#function to get number of elements less than the current key of dict
+def proportionOfElements(item,listOfNumbers): 
+    count = 0                                 #to count the number of elements less than or equal to the key
+    for element in listOfNumbers:
+        if element <= item:
+            count = count + 1
+    return (count/len(listOfNumbers))         #formula for porportion = count of element/ (length of the list)
+
+def keyOfDict(listOfNumbers):
+        dataOfDict = {}                       #to store the key of dict
+        for item in listOfNumbers:
+            dataOfDict[item] = proportionOfElements(item, listOfNumbers) #keys are the values of the listed elements
+        return(dataOfDict)
+    
+#calling the function:
+listOfNumbers = [5,8,10,15,23]
+keyOfDict(listOfNumbers)
