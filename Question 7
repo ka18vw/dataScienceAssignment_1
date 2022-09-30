@@ -1,0 +1,23 @@
+#function to get seconds past from the day
+def hourMinutesSeconds(seconds):
+    hour = seconds//3600     #1h = 3600 sec, 1min = 60 sec, and seconds is mod of seconds with 3600 and with 60
+    seconds = seconds%3600
+    minutes = seconds//60
+    seconds = seconds%60
+    return hour, minutes, seconds
+
+#two examples below:8 
+h, m, s = hourMinutesSeconds(96096) #gives the hour, minute and seconds past
+if h < 13:
+    print(h, m, s, "AM")
+else:
+    print(h, m, s, "PM")
+    print("It has been more than a day!") #prints: it has been more than 24 hours aka a day
+
+h, m, s = hourMinutesSeconds(23022)
+if h < 13:
+    print(h, m, s, "AM")
+else:
+    print(h, m, s, "PM")
+    print("It has been more than a day!")
+    
