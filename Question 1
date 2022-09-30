@@ -2,7 +2,7 @@ number = 1
 i = 1 
 
 while(number <= 10**8):
-    number = number * i         #the next two lines multiply the consecutive number to get a value greater or equal to 10^8
+    number = number * i           #the next two lines multiply the consecutive number to get a value greater or equal to 10^8
     i = i+1 
 
 print(number)
