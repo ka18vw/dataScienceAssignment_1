@@ -1,0 +1,13 @@
+def coveragePercent(radius_1,radius_2):
+    radius_1 = int(radius_1)          #converting the radii to integer values
+    radius_2 = int(radius_2)
+    area_1 = 3.14 * radius_1**2       #formula of area of a circl is pi * r^2
+    area_2 = 3.14 * radius_2**2
+    
+    if (area_1 > area_2):             #if loop calls for comparison in area
+        return ((area_2/area_1)*100)  #will give the percentage of the smaller area that covers the bigger circle
+    else:
+        return((area_1/area_2)*100)
+    return coveragePercent
+
+print(coveragePercent(13,12))         #test values 13 and 12.
