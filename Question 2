@@ -1,0 +1,10 @@
+def get_dict(ListOfStrings): 
+    stringData = {}                      #dict command stores the string that was added
+    
+    for string in ListOfStrings:
+        stringData[string] = len(string) #the string here is the key and the length as the value
+        
+    return stringData
+ 
+ListOfStrings = ['Banana', 'Pineapple', 'Grapefruit', 'Mango']
+print (get_dict(ListOfStrings))
