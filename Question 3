@@ -6,4 +6,4 @@ def exponent(x,y):                         #this exponent defines x^y and will r
 
 for i in l : 
     finalResult = exponent(i[0],i[1])      #after defining the function exponent, the for loop will call the function 
-    print(finalResult)             #the for loop will take numbers from the list l and apply to the exponent function
+    print(finalResult)                     #the for loop will take numbers from the list l and apply to the exponent function
